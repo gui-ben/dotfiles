@@ -1,2 +1,2 @@
-# dotfiles
-My dotfiles
+# My dotfiles
+My config files :fire:
