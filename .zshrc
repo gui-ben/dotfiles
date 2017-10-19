@@ -84,3 +84,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias q="exit"
+alias reset="tput reset" # faster than just reset, only clears buffer
+alias r="reset"
+alias home='cd ~'
+alias ..='cd ..'
+
+# git
+alias g='git'
+alias gs='git status'
+
+open() { nautilus "$1" }
