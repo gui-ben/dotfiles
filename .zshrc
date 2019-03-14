@@ -93,5 +93,6 @@ alias ..='cd ..'
 alias g='git'
 alias gs='git status'
 alias gd='git diff'
+alias gg='git grep -n'
 
 open() { nautilus "$1" }
