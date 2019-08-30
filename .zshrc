@@ -87,8 +87,8 @@ alias q="exit"
 alias :q='exit'
 
 alias reset="tput reset" # faster than just reset, only clears buffer
-alias r="reset"
-alias remake='r;make'
+alias r="tput reset"
+alias remake='tput reset; make'
 
 alias home='cd ~'
 alias ..='cd ..'
