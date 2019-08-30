@@ -84,8 +84,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias q="exit"
+alias :q='exit'
+
 alias reset="tput reset" # faster than just reset, only clears buffer
 alias r="reset"
+alias remake='r;make'
+
 alias home='cd ~'
 alias ..='cd ..'
 
