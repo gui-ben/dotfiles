@@ -99,4 +99,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gg='git grep -n'
 
+# Show Column names and colors in ls
+alias ls='echo "Dir Size|Perms|Link Count|Owner|Group|Size|Mod. Time|Name"; ls -AFhls --color --group-directories-first'
+
+
 open() { nautilus "$1" }
