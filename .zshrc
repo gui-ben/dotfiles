@@ -86,8 +86,10 @@ source $ZSH/oh-my-zsh.sh
 alias q="exit"
 alias :q='exit'
 
-alias reset="tput reset" # faster than just reset, only clears buffer
-alias r="tput reset"
+# https://stackoverflow.com/questions/2198377/how-to-clear-previous-output-in-terminal-in-mac-os-x#comment79575908_29876027
+alias reset="tput reset ; printf '\33c\e[3J'" # faster than just reset, only clears buffer
+
+alias r="reset"
 alias remake='tput reset; make'
 
 alias home='cd ~'
