@@ -1,0 +1,32 @@
+{
+    "title": "Fn key on Amazon chime toggles mic mute/unmute",
+    "rules": [
+        {
+            "description": "Use Fn on Chime to toggle mic",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "fn"
+                    },
+                    "to": [
+                        {
+                            "key_code": "y",
+                            "modifiers": [
+                                "left_gui"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "com.amazon.Amazon-Chime"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
