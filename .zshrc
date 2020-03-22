@@ -100,6 +100,8 @@ alias g='git'
 alias gs='git status'
 alias gd='git diff'
 alias gg='git grep -n'
+alias git pull= 'git pull --rebase' # https://stackoverflow.com/questions/16666089/whats-the-difference-between-git-merge-and-git-rebase/16666418#16666418
+alias gp='git fetch && git rebase'
 
 # Show Column names and colors in ls
 alias ls='echo "Dir Size|Perms|Link Count|Owner|Group|Size|Mod. Time|Name"; ls -AFhls --color --group-directories-first'
